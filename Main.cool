@@ -1,0 +1,9 @@
+#include "Greeter.cool"
+#include "Constants.cool"
+
+class Main() extends IO() {
+	var greeter: Greeter = new Greeter(HELLO);
+	{
+		greeter.greet()
+	};
+}
