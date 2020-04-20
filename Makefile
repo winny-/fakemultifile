@@ -1,7 +1,8 @@
 INCLUDES=Greeter.cool \
-	Constants.cool
+	Constants.cool \
+	Macros.cool
 
-SRC=Main.cool 
+SRC=Main.cool
 PP=$(patsubst %.cool, %.pp.cool, ${SRC})
 ASM=$(patsubst %.cool, %.s, ${SRC})
 

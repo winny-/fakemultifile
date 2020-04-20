@@ -1,9 +1,13 @@
 #include "Greeter.cool"
 #include "Constants.cool"
+#include "Macros.cool"
 
 class Main() extends IO() {
-	var greeter: Greeter = new Greeter(HELLO);
-	{
-		greeter.greet()
-	};
+  var greeter: Greeter = new Greeter(HELLO);
+  var reversed: Greeter = new Greeter(REVERSE(HELLO));
+  {
+    greeter.greet();
+    out("And in reverse...\n");
+    reversed.greet()
+  };
 }

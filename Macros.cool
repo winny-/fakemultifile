@@ -1,0 +1,23 @@
+#define IS_NULL(v) (v match { \
+  case null => true \
+  case zzz: Any => false \
+})
+
+class Reverse(var s: String) {
+  var cache: String = null;
+  def map(): String = {
+    if (IS_NULL(cache)) cache = reverse(s)
+    else ();
+    cache
+  };
+  def reverse(ss: String): String =
+    if (ss.length() == 0) ""
+    else {
+      var last_char: String = ss.substring(ss.length() - 1, ss.length());
+      var rest: String = ss.substring(0, ss.length() - 1);
+      112435;
+      last_char.concat(reverse(rest))
+    };
+}
+
+#define REVERSE(s) ((new Reverse(s)).map())

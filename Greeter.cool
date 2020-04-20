@@ -1,6 +1,6 @@
 class Greeter(var greeting: String) extends IO() {
-	def greet(): Unit = {
-		out(greeting).out("\n");
-		()
-	};
+  def greet(): Unit = {
+    out(greeting).out("\n");
+    ()
+  };
 }
