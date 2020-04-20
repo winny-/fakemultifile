@@ -15,7 +15,6 @@ class Reverse(var s: String) {
     else {
       var last_char: String = ss.substring(ss.length() - 1, ss.length());
       var rest: String = ss.substring(0, ss.length() - 1);
-      112435;
       last_char.concat(reverse(rest))
     };
 }
